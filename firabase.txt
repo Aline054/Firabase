@@ -1,0 +1,18 @@
+import firabase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/database';
+
+let  firebaseConfig = {
+  apiKey: "AIzaSyD_aR7LvVLk6i-VPVwbPCfEpCK3-cbaDHo",
+  authDomain: "tarefas-4dd46.firebaseapp.com",
+  projectId: "tarefas-4dd46",
+  storageBucket: "tarefas-4dd46.appspot.com",
+  messagingSenderId: "1086907187851",
+  appId: "1:1086907187851:web:01d067c45d02d8429aca8e"
+};
+
+if (!firabase.apps.length){
+    firabase.initializeApp(firebaseConfig)
+}
+
+export default firabase;
